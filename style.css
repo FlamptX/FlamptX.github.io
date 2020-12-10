@@ -47,13 +47,17 @@ h1 {
 #loginTitle {
     font-size: 35px;
 }
+#loggedText {
+    margin-top: 50px;
+}
 #error2 {
     position: absolute;
+    margin-top: 50px;
     color: red;
 }
 #logButton {
     position: absolute;
-    margin: 50px 0 0 -110px;
+    margin: 40px 0 0 -110px;
 }
 a {
     text-decoration: none;
