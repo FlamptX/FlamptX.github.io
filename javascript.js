@@ -1,27 +1,22 @@
 if (typeof localStorage === "undefined" || localStorage === null) {
     var LocalStorage = require('node-localstorage').LocalStorage;
     localStorage = new LocalStorage('./scratch');
- }
-
+}
 var username = "osdo0inf483x";
 var password = "ghgu8343z84";
-var user = "ufshudug37r7";
-var pass = "fgew732rzuef";
+console.log(JSON.parse(localStorage.getItem("Users")));
 function addAccount(user, pass) {
-    if (localStorage.getItem("account") === null) {
-        localStorage.setItem("account", "");
-    }
     var users = JSON.parse(localStorage.getItem('Users')) || [];
     var userData = [{user},
     {pass}];
     users.push(userData);
+    document.getElementById("error").style.visibility = "hidden";
+    username = document.getElementById("usernameInput").value;
     localStorage.setItem('Users', JSON.stringify(users));
     users.forEach(console.log);
 }
 function signUp() {
-    document.getElementById("signedText").style.visibility = "hidden";
-    document.getElementById("error").style.visibility = "hidden";
-    username = document.getElementById("usernameInput").value;
+    document.getElementById("signedText").style.visibility = 
     password = document.getElementById("passwordInput").value;
     if (username.length >= 4 && password.length >= 6) {
         document.getElementById("signedText").style.visibility = "visible";
@@ -38,38 +33,100 @@ function logIn() {
     userInput = document.getElementById("logUserInput").value;
     passInput = document.getElementById("logPassInput").value;
     function checkUser() {
-        if (userInput === users[0][0].user && passInput === users[0][1].pass) {
+        var userUser = JSON.parse(localStorage.getItem("Users"));
+        if (userInput === userUser[0][0].user && passInput === userUser[0][1].pass) {
             return true;
         } else {
             try {
                 return tryThis();
             }
             catch(err) {
-                console.log("catched");
+                console.log("catched error for function tryThis");
+                return false;
             }
         }
         function tryThis() {
-            if (userInput === users[1][0].user && passInput === users[1][1].pass) {
+            if (userInput === userUser[1][0].user && passInput === userUser[1][1].pass) {
                 return true;
-            } else if (userInput === users[2][0].user && passInput === users[2][1].pass) {
+            } else if (userInput === userUser[2][0].user && passInput === userUser[2][1].pass) {
                 return true;
-            } else if (userInput === users[3][0].user && passInput === users[3][1].pass) {
+            } else if (userInput === userUser[3][0].user && passInput === userUser[3][1].pass) {
                 return true;
-            } else if (userInput === users[4][0].user && passInput === users[4][1].pass) {
+            } else if (userInput === userUser[4][0].user && passInput === userUser[4][1].pass) {
                 return true;
-            } else if (userInput === users[5][0].user && passInput === users[5][1].pass) {
+            } else if (userInput === userUser[5][0].user && passInput === userUser[5][1].pass) {
                 return true;
-            } else if (userInput === users[6][0].user && passInput === users[6][1].pass) {
+            } else if (userInput === userUser[6][0].user && passInput === userUser[6][1].pass) {
                 return true;
-            } else if (userInput === users[7][0].user && passInput === users[7][1].pass) {
+            } else if (userInput === userUser[7][0].user && passInput === userUser[7][1].pass) {
                 return true;
-            } else if (userInput === users[8][0].user && passInput === users[8][1].pass) {
+            } else if (userInput === userUser[8][0].user && passInput === userUser[8][1].pass) {
                 return true;
-            } else if (userInput === users[9][0].user && passInput === users[9][1].pass) {
+            } else if (userInput === userUser[9][0].user && passInput === userUser[9][1].pass) {
                 return true;
-            } else if (userInput === users[10][0].user && passInput === users[10][1].pass) {
+            } else if (userInput === userUser[10][0].user && passInput === userUser[10][1].pass) {
                 return true;
-            } else if (userInput === users[11][0].user && passInput === users[11][1].pass) {
+            } else if (userInput === userUser[11][0].user && passInput === userUser[11][1].pass) {
+                return true;
+            } else if (userInput === userUser[12][0].user && passInput === userUser[2][1].pass) {
+                return true;
+            } else if (userInput === userUser[13][0].user && passInput === userUser[3][1].pass) {
+                return true;
+            } else if (userInput === userUser[14][0].user && passInput === userUser[4][1].pass) {
+                return true;
+            } else if (userInput === userUser[15][0].user && passInput === userUser[5][1].pass) {
+                return true;
+            } else if (userInput === userUser[16][0].user && passInput === userUser[6][1].pass) {
+                return true;
+            } else if (userInput === userUser[17][0].user && passInput === userUser[7][1].pass) {
+                return true;
+            } else if (userInput === userUser[18][0].user && passInput === userUser[8][1].pass) {
+                return true;
+            } else if (userInput === userUser[19][0].user && passInput === userUser[9][1].pass) {
+                return true;
+            } else if (userInput === userUser[20][0].user && passInput === userUser[10][1].pass) {
+                return true;
+            } else if (userInput === userUser[21][0].user && passInput === userUser[11][1].pass) {
+                return true;
+            } else if (userInput === userUser[22][0].user && passInput === userUser[2][1].pass) {
+                return true;
+            } else if (userInput === userUser[23][0].user && passInput === userUser[3][1].pass) {
+                return true;
+            } else if (userInput === userUser[24][0].user && passInput === userUser[4][1].pass) {
+                return true;
+            } else if (userInput === userUser[25][0].user && passInput === userUser[5][1].pass) {
+                return true;
+            } else if (userInput === userUser[26][0].user && passInput === userUser[6][1].pass) {
+                return true;
+            } else if (userInput === userUser[27][0].user && passInput === userUser[7][1].pass) {
+                return true;
+            } else if (userInput === userUser[28][0].user && passInput === userUser[8][1].pass) {
+                return true;
+            } else if (userInput === userUser[29][0].user && passInput === userUser[9][1].pass) {
+                return true;
+            } else if (userInput === userUser[30][0].user && passInput === userUser[10][1].pass) {
+                return true;
+            } else if (userInput === userUser[31][0].user && passInput === userUser[11][1].pass) {
+                return true;
+            } else if (userInput === userUser[32][0].user && passInput === userUser[2][1].pass) {
+                return true;
+            } else if (userInput === userUser[33][0].user && passInput === userUser[3][1].pass) {
+                return true;
+            } else if (userInput === userUser[34][0].user && passInput === userUser[4][1].pass) {
+                return true;
+            } else if (userInput === userUser[35][0].user && passInput === userUser[5][1].pass) {
+                return true;
+            } else if (userInput === userUser[36][0].user && passInput === userUser[6][1].pass) {
+                return true;
+            } else if (userInput === userUser[37][0].user && passInput === userUser[7][1].pass) {
+                return true;
+            } else if (userInput === userUser[38][0].user && passInput === userUser[8][1].pass) {
+                return true;
+            } else if (userInput === userUser[39][0].user && passInput === userUser[9][1].pass) {
+                return true;
+            } else if (userInput === userUser[40][0].user && passInput === userUser[10][1].pass) {
+                return true;
+            } else if (userInput === userUser[41][0].user && passInput === userUser[11][1].pass) {
                 return true;
             } else {
                 return false;
