@@ -1,0 +1,2 @@
+I have created a sign up/login program that will store the data even when the browser is closed.
+The data is stored in browser's local storage. Signing up will create an account and you can login with the details you signed up with. I didn't manage to make it so there is unlimited number of accounts that can be created. I may add that soon, but for now ten accounts is gonnna be enough. If you want to use my code or just a part make sure the credit me-

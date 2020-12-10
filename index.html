@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dino-Web</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script src="javascript.js"></script>
+<header>
+<h1>Dino Web</h1>
+</header>
+<div class="page">
+<h3 id="welcomeText">Welcome to my webpage, I have created a sign up/login program <br>that will store the data even when the browser is closed.</h3>
+<div class="text">
+<h3>The data is stored in browser's local storage.<br>Signing up will create an <em>account</em> and you can<br>login with the details you signed up with.<br>I didn't manage to make it so there is unlimited<br>number of accounts that can be created.<br>I may add that soon, but for now ten<br><em>accounts</em> is gonnna be enough.</h3>
+</div>
+<div class="login">
+<h3 id="loginTitle">Login</h3>
+<input id="logUserInput" placeholder="Username" type="text"><br>
+<input id="logPassInput" placeholder="Password" type="password">
+<button id="logButton" onclick="logIn()">Login</button>
+<p id="error2" style="visibility: hidden;">Wrong Username or Password</p>
+<h2 id="loggedText" style="visibility: hidden;">Logged In!</h2>
+</div>
+<div>
+<h2 id="signup">Sign Up</h2>
+<input id="usernameInput" placeholder="Username" type="text"><br>
+<input id = "passwordInput" placeholder="Password" type="password"><br>
+<button onclick="signUp()">Sign Up</button>
+<p id="error" style="color: red; visibility: hidden;">Username or Password is not long enough<br>(username: atleast 4 letters, password: atleast 6 letters)</p>
+<h2 id="signedText" style="visibility: hidden;">Signed Up!</h2>
+</div>
+<br>
+<br>
+<img src="http://getdrawings.com/cliparts/world-map-clipart-14.png" width="220" height="140">
+</div>
+</body>
+</html>

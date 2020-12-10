@@ -1,0 +1,90 @@
+body {
+    background: linear-gradient(lightSteelBlue, linen, lightGreen) fixed;
+    font-family: "Comic Sans MS";
+}
+header {
+    height: 100px;
+    margin: -35px -8px 0 -8px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+    font-size: 25px;
+}
+#welcomeText {
+    margin-bottom: -20px;
+}
+h1 {
+    color: white;
+    padding-top: 8px;
+}
+.page {
+    text-align: center;
+}
+.text {
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 120px;
+    padding: 0 10px 0 10px;
+    border-radius: 10px;
+    background-color: white;
+}
+#signup {
+    font-size: 50px;
+}
+#usernameInput {
+    width: 12%;
+    font-size: 20px;
+}
+#passwordInput {
+    width: 12%;
+    font-size: 20px;
+}
+.login {
+    position: absolute;
+    margin-left: 1350px;
+    margin-top: 30px;
+}
+#loginTitle {
+    font-size: 35px;
+}
+#error2 {
+    position: absolute;
+    color: red;
+}
+#logButton {
+    position: absolute;
+    margin: 50px 0 0 -110px;
+}
+a {
+    text-decoration: none;
+}
+img {
+    border-radius: 100px 100px 100px 100px;
+}
+#error {
+    margin-top: 30px;
+    position: absolute;
+    margin-left: 585px;
+}
+input {
+    border: none;
+    border-bottom: 2px solid green;
+    padding: 3px 3px;
+    margin-bottom: 7px;
+    box-sizing: border-box;
+}
+button {
+    background-color:white;
+    border-width: 1px;
+    border-color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Comic Sans MS";
+    margin-top: 10px;
+    border-radius: 5px;
+    transition-duration: 0.2s;
+    padding: 2px 3px 2px 3px;
+}
+button:hover {
+    background-color:  rgb(243, 243, 243);
+}
